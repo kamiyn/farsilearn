@@ -14,12 +14,21 @@ POP DIRECTIONAL ISOLATE(U+2069 略称 PDI)
 入力方法: IMEで 2067 [F5] ,2069 [F5]
 (MS-IME には文字コード + F5 で直接入力する機能がある。少なくとも MS-IME 2007 から存在しているようだ)
 
-This is a farsi phrase with RLI+PDI: "⁧این زلزله در سال ۲۰۱۱ اتفاق افتاده است.⁩"
-This is a farsi phrase without RLI+PDI: "این زلزله در سال ۲۰۱۱ اتفاق افتاده است."
+This is a farsi phrase without RLI+PDI:
+> "این زلزله در سال ۲۰۱۱ اتفاق افتاده است."
+
+ピリオドがペルシア語文の末尾=左端に来てほしいが、右端に飛んでいる。
+ここでダブルクオートの内側に RLI, PDI を追加すると次のようになる。
+
+This is a farsi phrase with RLI+PDI:
+> "⁧این زلزله در سال ۲۰۱۱ اتفاق افتاده است.⁩"
+```
+"[RLI]（ペルシア語文）[PDI]"
+```
 
 ![ScreenShot Of VSCode](https://raw.githubusercontent.com/kamiyn/farsilearn/images/vscode.png)
 
-RLI/PDI で囲んだとしても、VSCode は数字を Left To Right で表示してくれる。
+RLI/PDI で囲んだとしても、VSCode は数字を Left To Right で表示してくれる。ここでは4桁の数字 2011
 
 # 参考資料
 
