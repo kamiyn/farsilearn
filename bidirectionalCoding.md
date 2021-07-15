@@ -1,5 +1,7 @@
 # ソースコード内に RightToLeft文字列リテラルを埋め込む時に文字がすっ飛んでいくのを解決したい
 
+## 解決方法 (結論)
+
 RightToLeft な文字列を
 
 ```
@@ -12,24 +14,40 @@ POP DIRECTIONAL ISOLATE(U+2069 略称 PDI)
 で囲む。
 
 入力方法: IMEで 2067 [F5] ,2069 [F5]
+
 (MS-IME には文字コード + F5 で直接入力する機能がある。少なくとも MS-IME 2007 から存在しているようだ)
+
+## 何が問題か
 
 This is a farsi phrase without RLI+PDI:
 > "این زلزله در سال ۲۰۱۱ اتفاق افتاده است."
-
-ピリオドがペルシア語文の末尾=左端に来てほしいが、右端に飛んでいる。
 ( [カーソル移動動画1](https://raw.githubusercontent.com/kamiyn/farsilearn/images/bidirectionalVScode1.mp4) )
 
+ピリオド自体は方向を持たない Neutral 文字で、
+文全体が Implicit LTR (既定の挙動が Left To Right) であることから、
+Left To Right として評価されることに起因している。
+
+結果として **文末の** ダブルクオートにくっついて表示される。
+
+書き手の意図としては、ピリオドがペルシア語文の末尾
+= **文頭の** ダブルクオートにくっついて表示してほしい。
+
+## 解決方法を適用したらどうなるか
+
 ここでダブルクオートの内側に RLI, PDI を追加すると次のようになる。
-( [カーソル移動動画2](https://raw.githubusercontent.com/kamiyn/farsilearn/images/bidirectionalVScode2.mp4) )
 
 This is a farsi phrase with RLI+PDI:
 > "⁧این زلزله در سال ۲۰۱۱ اتفاق افتاده است.⁩"
+( [カーソル移動動画2](https://raw.githubusercontent.com/kamiyn/farsilearn/images/bidirectionalVScode2.mp4) )
 ```
 "[RLI]（ペルシア語文）[PDI]"
 ```
 
-## Right To Left 文字列中に含まれる 数字列(Left To Right)
+書き手の意図通り、ペルシア語文の末尾、すなわち **文頭の** ダブルクオートにくっついて表示される。
+
+## Right To Left 指定された領域中でも 数字列 は Left To Right
+
+ペルシア語(おそらくアラビア語も)では数字列を Left To Right で記述する。
 
 ![ScreenShot Of VSCode](https://raw.githubusercontent.com/kamiyn/farsilearn/images/vscode.png)
 
