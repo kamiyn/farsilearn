@@ -42,9 +42,6 @@ RLI/PDI で囲んだとしても、VSCode は数字を Left To Right で表示�
 この文章の HexDump 表示で
 RLI(UTF-8 でのバイト列 0xE2, 0x81, 0xA7) が実際に埋まっている様子を確認した。
 
-
-[日本語WikiPedia 双方向テキスト](https://ja.wikipedia.org/wiki/%E5%8F%8C%E6%96%B9%E5%90%91%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)
-
 # 参考資料
 
 http://www.unicode.org/reports/tr9/tr9-42.html Unicode® Standard Annex #9 (Revision 42)
