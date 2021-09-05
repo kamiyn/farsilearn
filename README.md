@@ -88,6 +88,12 @@ https://www.amazon.co.jp/dp/019474020X
 発音などの技術面だけでなく、モチベーションの維持についての知識を問う部分もあり、
 「あきらめずに続ける」ための一助となっている。
 
+## Modern Persian, Elementary Level
+
+https://sites.google.com/a/anthempress.com/modern-persian/home
+
+初級の音声教材付き教科書 2020年 中身は未評価です
+
 # これまでの学習の経緯 (2019年末時点)
 
 その後 2021年夏時点の文章を追加しています。
