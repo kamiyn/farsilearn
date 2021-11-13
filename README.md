@@ -297,7 +297,7 @@ Microsoft Word での入力について、翻訳パネルと注釈パネルを�
 
 ![ScreenShot Of Word](https://raw.githubusercontent.com/kamiyn/farsilearn/images/farsiword.png)
 
-フォントについて
+[フォントについて](#フォントについて)
 
 丸ゴシック系フォントを好んでいるため
 https://github.com/rastikerdar/vazir-font
