@@ -1,6 +1,14 @@
 # ソースコード内に RightToLeft文字列リテラルを埋め込む時に文字がすっ飛んでいくのを解決したい
 
-## 解決方法 (結論)
+*以下の解決方法は VSCode, VS2022 において2021年12月現在使えなくなっています。*
+
+セキュリティ上の理由で制御文字として機能しなくなったため。
+
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42574
+https://code.visualstudio.com/updates/v1_62#_unicode-directional-formatting-characters
+https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes#17.0.3.0
+
+## 解決方法 (2021年10月まで)
 
 RightToLeft な文字列を
 
