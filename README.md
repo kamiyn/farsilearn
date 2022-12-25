@@ -297,6 +297,30 @@ Microsoft Word での入力について、翻訳パネルと注釈パネルを�
 
 ![ScreenShot Of Word](https://raw.githubusercontent.com/kamiyn/farsilearn/images/farsiword.png)
 
+# これまでの学習の経緯 (2022年12月時点)
+
+## 2021年12月
+
+ハーフェズ詩 の朗読を指名され、ガザル 359 を毎日のように練習した。
+
+![ScreenShot Of Word](https://raw.githubusercontent.com/kamiyn/farsilearn/images/hafezGazar359.png)
+
+[ハーフィズ詩集(東洋文庫)](https://www.heibonsha.co.jp/book/b164420.html) を電子版で購入し
+意味をとるための手助けをした。
+
+詩を詠む、が歌を歌うことにつながる、ということを身体的に実感する体験となった。
+
+## 2022年全般
+
+作文→Preply添削→発表 を毎週行うという流れが基本になった。
+
+一方で教科書の3冊目になると 口語表現 についてのトピックが中心となり
+文章で説明されている内容から理解するのが困難になった。
+
+自動翻訳の支援を得ながら意図を伝える文章を書くのとは違う難しさを実感した。
+
+# その他のメモ
+
 [フォントについて](#フォントについて)
 
 丸ゴシック系フォントを好んでいるため
